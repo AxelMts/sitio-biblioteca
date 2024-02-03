@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href="CCS/stilos.CSS">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Escolar "David Alfaro Siqueiros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #009000;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #200;
+            color: white;
+            padding: 15px;
+        }
+
+        section {
+            margin: 60px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #busqueda {
+            display: flex;
+            justify-content: center;
+            margin: 25px 0;
+        }
+
+        #busqueda input[type="text"] {
+            padding: 50px;
+            width: 400px;
+        }
+
+        #busqueda select {
+            padding: 20px;
+            margin-left: 15px;
+        }
+
+
+        #tabla-libros {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #tabla-libros th, #tabla-libros td {
+            border: 1px solid #010101;
+            padding: 40px;
+            text-align: left;
+        }
+
+        #tabla-libros th {
+            background-color: #009000;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Biblioteca Escolar</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+    </nav>
+
+    <section id="busqueda">
+            <select name="categoria">
+    
+                <option value="todas">Todas las categorías</option>
+                <option value="terror">Terror</option>
+                <option value="espanol">Español</option>
+                <option value="matematicas">Matemáticas</option>
+                <option value="historia">Historia</option>
+                <option value="enciclopedia">Enciclopedia</option>
+            </select>
+   
+        </form>
+    </section>
+
+    <section id="tabla-libros">
+        <h2>Catálogo de Libros</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Portada</th>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Categoría</th>
+                    <th>Año de Publicación</th>
+		    <th>Cantidad de libros</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Fila 1 -->
+                <tr>
+                    <td><a href="Enciclopedia.JPG">
+		<img src="img/Enciclopedia.JPG"></a></td>
+                    <td>Enciclopedia 1</td>
+                    <td>SEP</td>
+                    <td>Enciclopedia</td>
+                    <td>2005</td>
+                    <td>20</td>
+                </tr>
+                <!-- Fila 2 -->
+                <tr>
+                    <td><a href="Principito.JPG">
+		<img src="img/Principito.JPG"></a></td>
+                    <td>El principito</td>
+                    <td>Antoinede_Saint Exupéry</td>
+                    <td>Español</td>
+                    <td>2010</td>
+		    <td>15</td>
+                </tr>
+                <!-- Fila 3 -->
+                <tr>
+                    <td><a href="Matematicas.JPG">
+		<img src="img/Matematicas.JPG"></a></td>
+                    <td>Matematicas</td>
+                    <td>SEP</td>
+                    <td>Matemáticas</td>
+                    <td>2018</td>
+                    <td>25</td>
+                </tr>
+                <!-- Fila 4 -->
+                <tr>
+                    <td><a href="Historia.JPG">
+		<img src="img/Historia.JPG"></a></td>
+                    <td>Libro de Historia 1</td>
+                    <td>SEP</td>
+                    <td>Historia</td>
+                    <td>2013</td>
+                    <td>10</td>
+                </tr>
+                <!-- Fila 5 -->
+                <tr>
+                    <td><a href="Enciclopedia de ciencias.JPG">
+		<img src="img/Enciclopedia de ciencias.JPG"></a></td>
+                    <td>Enciclopedia Completa</td>
+                    <td>SEP</td>
+                    <td>Enciclopedia</td>
+                    <td>2008</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Biblioteca Escolar</p>
+    </footer>
+</body>
+
+</html>
